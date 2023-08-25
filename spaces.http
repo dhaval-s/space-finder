@@ -1,0 +1,32 @@
+@url = https://o1ae8tag9f.execute-api.ap-south-1.amazonaws.com/prod/
+@token = eyJraWQiOiJ2ZTdsQ0dmdU43OEVKMUVLVERzbHpZYmU4TkZBK0tnVitcL1wvQkkremRCeTA9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiIzMWYzYmRlYS1mMDQxLTcwNjktNjc1My04YjE1NDg4YjYyMDgiLCJjb2duaXRvOmdyb3VwcyI6WyJhZG1pbnMiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGgtMV91TFVHaTl2RUYiLCJjb2duaXRvOnVzZXJuYW1lIjoiZGhhdmFsIiwib3JpZ2luX2p0aSI6ImY0ZmEzMGM3LTQ3NmMtNDA5Yi04MjFiLWVmYjE2ODhkN2NmMSIsImF1ZCI6Im9xMzRoNmh0ZXZqbG5xOWgxZXJqMWZ2ZjYiLCJldmVudF9pZCI6IjFjMmRmY2M2LTNjMDAtNDUxYy1iY2NhLTU1NzIxMWNiNzQ3YSIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNjkyOTAxODQzLCJleHAiOjE2OTI5MDU0NDMsImlhdCI6MTY5MjkwMTg0MywianRpIjoiNjNiOTRjMDQtOTEzZi00MDZiLWJkZDItOWZmZTI0ZTk2ZWQyIiwiZW1haWwiOiJkaGF2YWwuc2lzb2RpeWEuOTFAZ21haWwuY29tIn0.tazIKgEOAcE6G7XsBv-C38l0GckhYdraaB-dhvJWf9FphKg3uMoZGdMvQyDHDBmhtcrZZVeSs_KjWzk1xX5NDffNSMSzowSWAU9S9L8me99cMFkS-H-AMIuuGI0iuSC8jXXoYUuDhT9Cw0KEQGtT5323xbo1PCgUNR7m075V5mqZ_JJbAbYzl3cPk3pIsu54TqK2oC831cR5xHRKaxCAngvKWvNzJ1g543I-c0lc6lHhEUYK2SWf3LdZ7hRKHP8mDB-j2JE0Z0YG9E3wGzUaif8CGeCxkiens_izDqFvnfr5Pk1TdnrWQD7b98WJqpLM_Yq0p31txwp7sdAAQ7lY8g
+
+GET {{url}}/spaces
+Authorization: {{token}}
+###
+
+POST https://o1ae8tag9f.execute-api.ap-south-1.amazonaws.com/prod/spaces
+Content-Type: application/json
+
+{
+    "location": "Lunawada",
+    "name": "Home Town"
+}
+###
+
+GET https://o1ae8tag9f.execute-api.ap-south-1.amazonaws.com/prod/spaces?id=7a88bc20-684b-4ceb-b949-3ba6702cc46b
+###
+
+
+PUT https://o1ae8tag9f.execute-api.ap-south-1.amazonaws.com/prod/spaces?id=56e27bfb-5bc1-4dc2-87a3-9c9ee8dc6c70
+Content-Type: application/json
+
+{
+    "name": "My Best Location-2"
+}
+###
+
+
+DELETE https://o1ae8tag9f.execute-api.ap-south-1.amazonaws.com/prod/spaces?id=7a88bc20-684b-4ceb-b949-3ba6702cc46b
+Authorization: {{token}}
+###
